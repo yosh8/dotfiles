@@ -62,19 +62,6 @@ highlight CursorColumn   term=NONE cterm=NONE ctermfg=black ctermbg=white
 " wait time for key input
 set timeout timeoutlen=3000 ttimeoutlen=100
 
-" codereview.pl, template-validator
-if has('autocmd')
-    augroup EditPerl
-    autocmd!
-    autocmd BufWritePost,FileWritePost *.{t,p[lm]} !/usr/local/mixi-devtools/mixi-codereview/bin/codereview.pl <afile>
-    autocmd BufWritePost,FileWritePost *.tmpl !./script/devel/template-validator <afile>
-    augroup END
-endif
-
-" perltidy
-map ,ptv :'<,'>! perl -I/home/bkapps/share/site_perl/ ~/bin/perltidy
-map ,pt :%! perl -I/home/bkapps/share/site_perl/ ~/bin/perltidy
-
 " edit .vimrc
 nnoremap <silent> <Space>ev  :<C-u>edit $MYVIMRC<CR>
 " open .pm file useing <gf> on method call syntax
