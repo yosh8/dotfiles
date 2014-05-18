@@ -11,3 +11,5 @@ alias gdich='git diff --cached'
 alias tmuxs='tmux new-session \; source-file ~/projects/dotfiles/tmux/startup'
 export HOMEBREW_GITHUB_API_TOKEN='728e294099d16b2c6578d9dd165ee4eaead37ea9'
 source ~/.git-completion.bash
+# if set -C, bash does not overwrite an existing file with the >, >&, and <> redirection operators.
+set -C
