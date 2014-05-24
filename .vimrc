@@ -5,7 +5,7 @@ syntax on
 "set fileencodings=utf-8,cp932,iso-2022-jp,euc-jp,default,latin
 "source ~/.vim/autoload_rc.vim
 
-source ~/.vim/bundles.vim
+source ~/.vim/neobundle.vimrc
 source ~/.vim/neocomplete.vimrc
 map ,nbi :NeoBundleInstall
 
