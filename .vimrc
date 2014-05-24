@@ -6,6 +6,7 @@ syntax on
 "source ~/.vim/autoload_rc.vim
 
 source ~/.vim/bundles.vim
+source ~/.vim/neocomplete.vimrc
 map ,nbi :NeoBundleInstall
 
 " for char-encoding
